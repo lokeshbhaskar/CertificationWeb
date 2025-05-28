@@ -1,10 +1,12 @@
 import React from "react";
 import img from '../assets/main.jpg'
 import Navbar from "../components/layouts/Navbar";
+import Card from "../components/cards/Card";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="bg-orange-50" >
       <Navbar />
       <section className="min-h-[80vh] relative bg-gray-100 rounded-xl overflow-hidden m-4">
         <img
@@ -12,12 +14,12 @@ const Home = () => {
           alt="Background"
           className="absolute inset-0 object-cover w-full h-full opacity-80"
         />
-        <div className="relative z-10 p-10 max-w-4xl mx-auto text-white">
+        <div className="relative top-10 md:top-40 z-10 p-10 max-w-4xl mx-auto text-white">
           <h1 className="text-4xl font-bold mb-2">Get certified</h1>
           <p className="text-lg mb-6">
             100+ certification courses. 100% online
           </p>
-          <div className="flex items-center bg-white rounded shadow-md p-2 max-w-md">
+          <div className="flex flex-col md:flex-row items-center bg-white rounded shadow-md p-2 max-w-md">
             <input
               type="text"
               placeholder="Search for a certification"
@@ -29,6 +31,8 @@ const Home = () => {
           </div>
         </div>
       </section>
+      < Card />
+      <Footer />
     </div>
   );
 };

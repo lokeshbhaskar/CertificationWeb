@@ -7,16 +7,16 @@ const Navbar = () => {
         <div className="text-xl font-bold">Certify</div>
         <nav className="hidden md:flex gap-6 text-gray-700">
           <a href="#" className="hover:text-black">
-            Browse
+            Home
           </a>
           <a href="#" className="hover:text-black">
-            For Enterprise
+            Courses
           </a>
           <a href="#" className="hover:text-black">
-            Pricing
+            Certifications
           </a>
           <a href="#" className="hover:text-black">
-            Support
+             Pricing
           </a>
         </nav>
         <div className="flex gap-2">
