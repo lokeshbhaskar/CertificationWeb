@@ -37,7 +37,7 @@ const Navbar = () => {
              before:transition-all before:duration-300
              hover:before:w-full"
           >
-            Certifications
+            Pricing
           </a>
           <a href="#" className="relative inline-block text-gray-700 hover:text-black
              before:absolute before:-bottom-1 before:left-0
@@ -45,7 +45,7 @@ const Navbar = () => {
              before:transition-all before:duration-300
              hover:before:w-full"
           >
-             Pricing
+            Support
           </a>
         </nav>
         <div className="flex gap-2">
@@ -64,6 +64,37 @@ const Navbar = () => {
           </button>
         </div>
       </header>
+
+      {/* mobile menu */}
+      {isMenuOpen && (
+        <div className="fixed w-full h-full bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm">
+          <a
+            href="#"
+            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
+          >
+            Browse
+          </a>
+          <a
+            href="#"
+            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
+          >
+            For Enterprise
+          </a>
+          <a
+            href="#"
+            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
+          >
+            Pricing
+          </a>
+          <a
+            href="#"
+            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
+          >
+            Support
+          </a>
+        </div>
+      )}
+
     </div>
   );
 };
