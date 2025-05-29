@@ -73,7 +73,7 @@ const Home = () => {
             </button>
           </div>
           { suggestions.length > 0 && (
-             <ul className="absolute z-30 left-0 right-0 bg-white shadow-md rounded mt-1 max-h-40 ">
+             <ul className=" absolute z-30 left-0 right-0 bg-white shadow-md rounded mt-1 max-h-40 ">
                 {suggestions.map((item, idx) => (
                   <li
                     key={idx}

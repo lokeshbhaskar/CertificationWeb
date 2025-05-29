@@ -67,35 +67,8 @@ const Navbar = () => {
       </header>
 
       {/* mobile menu */}
-      {/* {isMenuOpen && (
-        <div className="fixed w-full h-[80%] bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm">
-          <a
-            href="#"
-            className="mt-20 w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
-          >
-            Browse
-          </a>
-          <a
-            href="#"
-            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
-          >
-            For Enterprise
-          </a>
-          <a
-            href="#"
-            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
-          >
-            Pricing
-          </a>
-          <a
-            href="#"
-            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
-          >
-            Support
-          </a>
-        </div>
-      )} */}
-            <MenuModal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
+
+      <MenuModal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </div>
   );
 };
