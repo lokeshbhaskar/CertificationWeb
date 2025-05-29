@@ -44,13 +44,13 @@ const Home = () => {
 
 
   return (
-    <div className="bg-orange-50 " >
+    <div className="bg-orange-50 ">
       <Navbar />
       <section className="min-h-[80vh] relative bg-gray-100 rounded-xl  m-4">
         <img
           src={img}
           alt="Background"
-          className="absolute inset-0 object-cover w-full h-full opacity-80"
+          className="absolute mt-15 inset-0 object-cover w-full h-full opacity-80"
         />
         <div className="relative top-10 md:top-20 lg:top-45 xl:top-70 lg:left-20 z-10 p-10 max-w-4xl mx-auto text-white">
           <h1 className="text-4xl font-bold mb-2">Get certified</h1>
@@ -73,7 +73,7 @@ const Home = () => {
             </button>
           </div>
           { suggestions.length > 0 && (
-             <ul className="absolute z-30 left-0 right-0 bg-white shadow-md rounded mt-1 max-h-40 ">
+             <ul className=" absolute z-30 left-0 right-0 bg-white shadow-md rounded mt-1 max-h-40 ">
                 {suggestions.map((item, idx) => (
                   <li
                     key={idx}
