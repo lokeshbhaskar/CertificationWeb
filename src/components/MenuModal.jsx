@@ -26,12 +26,12 @@ const MenuModal = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className="fixed w-full h-[90vh] bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm"
+            className="fixed inset-0 h-[70vh] bg-white/60  w-full  bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm"
             onClick={onClose}  //always clicked when it is already opened
         >
             <div
             ref={modalRef}
-                className="w-full flex flex-col items-center space-y-5"
+                className="w-full  flex flex-col items-center overflow-y-auto space-y-5"
             >
                 <a
                     href="#"
@@ -57,6 +57,7 @@ const MenuModal = ({ isOpen, onClose }) => {
                 >
                     Support
                 </a>
+                
             </div>
         </div>
     );

@@ -12,7 +12,7 @@ const Home = () => {
         <img
           src={img}
           alt="Background"
-          className="absolute inset-0 object-cover w-full h-full opacity-80"
+          className="absolute mt-15 inset-0 object-cover w-full h-full opacity-80"
         />
         <div className="relative top-10 md:top-40  lg:right-70 z-10 p-10 max-w-4xl mx-auto text-white">
           <h1 className="text-4xl font-bold mb-2">Get certified</h1>
