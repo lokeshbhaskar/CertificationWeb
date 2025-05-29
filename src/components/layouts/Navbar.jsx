@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TbMenuDeep } from "react-icons/tb";
 import { IoClose } from "react-icons/io5";
+import MenuModal from "../MenuModal";
 
 
 const Navbar = () => {
@@ -12,7 +13,7 @@ const Navbar = () => {
   }
   return (
     <div>
-      <header className="fixed top-0 left-0 w-full h-18 z-40 flex items-center justify-between p-4 shadow-md bg-white">
+      <header className="fixed top-0 left-0 w-full h-18 z-50 flex items-center justify-between p-4 shadow-md bg-white">
         <div className="text-xl font-bold">Certify</div>
         <nav className="hidden md:flex gap-6 text-gray-700">
           <a href="#" className="relative inline-block text-gray-700 hover:text-black
@@ -66,11 +67,11 @@ const Navbar = () => {
       </header>
 
       {/* mobile menu */}
-      {isMenuOpen && (
-        <div className="fixed w-full h-full bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm">
+      {/* {isMenuOpen && (
+        <div className="fixed w-full h-[80%] bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm">
           <a
             href="#"
-            className="w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
+            className="mt-20 w-full max-w-xs text-center py-3 px-4 rounded-xl bg-white shadow hover:shadow-md transition-all text-lg font-semibold text-gray-700 hover:text-orange-600 hover:bg-orange-100"
           >
             Browse
           </a>
@@ -93,8 +94,8 @@ const Navbar = () => {
             Support
           </a>
         </div>
-      )}
-
+      )} */}
+            <MenuModal isOpen={isMenuOpen} onClose={() => setIsMenuOpen(false)} />
     </div>
   );
 };
