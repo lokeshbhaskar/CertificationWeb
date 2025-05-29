@@ -1,43 +1,40 @@
 import React from "react";
-import aws from "../../assets/aws.png";
-import frontend from "../../assets/frontend.png";
-import backend from "../../assets/backend.png";
-import python from "../../assets/python.png";
-import mongo from "../../assets/mongo.png";
 import { useNavigate } from "react-router-dom";
+import certifications from "../../utils/Certifications";
 
-const certifications = [
-  {
-    title: "Frontend Developer",
-    by: "by Certify",
-    image: frontend,
-    route: "/certifications/frontend",
-  },
-  {
-    title: "MERN Stack Developer",
-    by: "by Certify",
-    image: mongo,
-    route: "/certifications/mern",
-  },
-  {
-    title: "Backend Developer",
-    by: "by Certify",
-    image: backend,
-    route: "/certifications/backend",
-  },
-  {
-    title: "Python Developer",
-    by: "by Certify",
-    image: python,
-    route: "/certifications/python",
-  },
-  {
-    title: "AWS Certification",
-    by: "by Certify",
-    image: aws,
-    route: "/certifications/aws",
-  },
-];
+
+// const certifications = [
+//   {
+//     title: "Frontend Developer",
+//     by: "by Certify",
+//     image: frontend,
+//     route: "/certifications/frontend",
+//   },
+//   {
+//     title: "MERN Stack Developer",
+//     by: "by Certify",
+//     image: mongo,
+//     route: "/certifications/mern",
+//   },
+//   {
+//     title: "Backend Developer",
+//     by: "by Certify",
+//     image: backend,
+//     route: "/certifications/backend",
+//   },
+//   {
+//     title: "Python Developer",
+//     by: "by Certify",
+//     image: python,
+//     route: "/certifications/python",
+//   },
+//   {
+//     title: "AWS Certification",
+//     by: "by Certify",
+//     image: aws,
+//     route: "/certifications/aws",
+//   },
+// ];
 
 const Card = () => {
   const navigate = useNavigate();

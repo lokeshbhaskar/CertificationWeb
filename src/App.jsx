@@ -5,6 +5,7 @@ import Mern from "./pages/certifications/Mern";
 import Python from "./pages/certifications/Python";
 import Backend from "./pages/certifications/Backend";
 import Aws from "./pages/certifications/Aws";
+import Fullstack from "./pages/certifications/Fullstack";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Home />} />
         {/* <Route path="/certifications" element={<Certifications />} /> */}
         <Route path="/certifications/frontend" element={<Frontend />} />
+        <Route path="/certifications/fullstack" element={ <Fullstack /> } />
         <Route path="/certifications/mern" element={<Mern />} />
         <Route path="/certifications/backend" element={<Backend />} />
         <Route path="/certifications/python" element={<Python />} />
