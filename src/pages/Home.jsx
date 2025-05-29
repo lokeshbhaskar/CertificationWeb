@@ -24,7 +24,7 @@ const Home = () => {
     const value = e.target.value;
     setSearch(value)
 
-     if (value.trim() === "") {
+     if (value.trim() === " ") {
       setSuggestions([]);
       setFilteredTasks(certifications);
       return;
