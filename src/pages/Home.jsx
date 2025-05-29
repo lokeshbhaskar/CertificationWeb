@@ -24,7 +24,7 @@ const Home = () => {
     const value = e.target.value;
     setSearch(value)
 
-     if (value.trim() === "") {
+     if (value.trim() === " ") {
       setSuggestions([]);
       setFilteredTasks(certifications);
       return;
@@ -73,7 +73,7 @@ const Home = () => {
             </button>
           </div>
           { suggestions.length > 0 && (
-             <ul className=" absolute z-30 left-0 right-0 bg-white shadow-md rounded mt-1 max-h-40 ">
+             <ul className=" absolute z-30 left-4 right-0 bg-white shadow-md rounded mt-1 max-h-40 max-w-[260px] md:max-w-2xl ">
                 {suggestions.map((item, idx) => (
                   <li
                     key={idx}
