@@ -50,7 +50,7 @@ const Home = () => {
         <img
           src={img}
           alt="Background"
-          className="absolute  rounded-2xl mt-25 inset-0 object-cover w-full h-full opacity-80"
+          className="absolute  rounded-md mt-18 inset-0 object-cover w-full h-full opacity-80"
         />
         <div className="relative top-20 md:top-70 lg:top-45 xl:top-70 z-10 p-10 lg:left-10 max-w-4xl mx-auto text-white">
           <h1 className="text-4xl font-bold mb-2">Get certified</h1>
