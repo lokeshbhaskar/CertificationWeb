@@ -12,7 +12,7 @@ const Navbar = () => {
   }
   return (
     <div>
-      <header className="flex items-center justify-between p-4 shadow-md bg-white">
+      <header className="fixed top-0 left-0 w-full h-18 z-40 flex items-center justify-between p-4 shadow-md bg-white">
         <div className="text-xl font-bold">Certify</div>
         <nav className="hidden md:flex gap-6 text-gray-700">
           <a href="#" className="relative inline-block text-gray-700 hover:text-black
