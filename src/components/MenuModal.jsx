@@ -26,7 +26,7 @@ const MenuModal = ({ isOpen, onClose }) => {
 
     return (
         <div
-            className="fixed w-full h-[70%] bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm"
+            className="fixed w-full h-[90vh] bg-gradient-to-b from-white to-orange-50 z-40 flex flex-col items-center space-y-5 py-10 px-6 shadow-2xl backdrop-blur-sm"
             onClick={onClose}  //always clicked when it is already opened
         >
             <div

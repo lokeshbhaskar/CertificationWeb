@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div className="bg-orange-50 " >
+    <div className="bg-orange-50 ">
       <Navbar />
       <section className="min-h-[80vh] relative bg-gray-100 rounded-xl overflow-hidden m-4">
         <img
